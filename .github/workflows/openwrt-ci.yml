@@ -177,6 +177,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-smartdns=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-udpxy=y
+          CONFIG_PACKAGE_luci-app-softethervirtual=y
+          # CONFIG_DEFAULT_luci-app-ipsec-vpnd is not set
           EOF
           
           # passwall下软件选择
