@@ -99,7 +99,7 @@ jobs:
           # 无论你想要对固件进行怎样的定制, 都需要且只需要修改 EOF 回环内的内容.
           # 
 
-          # 编译x64固件:
+          # 编译R2S固件:
           cat >> .config <<EOF
           CONFIG_TARGET_rockchip=y
           CONFIG_TARGET_rockchip_armv8=y
@@ -112,9 +112,9 @@ jobs:
           EOF
 
           # 编译UEFI固件:
-          cat >> .config <<EOF
-          CONFIG_EFI_IMAGES=y
-          EOF
+          #cat >> .config <<EOF
+          #CONFIG_EFI_IMAGES=y
+          #EOF
 
           # IPv6支持和Extra packages合并:
           cat >> .config <<EOF
