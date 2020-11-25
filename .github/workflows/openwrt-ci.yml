@@ -112,9 +112,9 @@ jobs:
           EOF
 
           # 编译UEFI固件:
-          #cat >> .config <<EOF
-          #CONFIG_EFI_IMAGES=y
-          #EOF
+          cat >> .config <<EOF
+          CONFIG_EFI_IMAGES=y
+          EOF
 
           # IPv6支持和Extra packages合并:
           cat >> .config <<EOF
@@ -176,7 +176,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-passwall=y
           CONFIG_PACKAGE_luci-app-smartdns=y
           CONFIG_PACKAGE_luci-app-syncdial=y
-          CONFIG_PACKAGE_luci-app-softethervirtual**=y
           # CONFIG_DEFAULT_luci-app-ipsec-vpnd is not set
           EOF
           
